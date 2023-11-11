@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:animation="http://www.w3.org/1999/xhtml">
   <head>
     <title>My Portfolio</title>
     <meta charset="utf-8">
@@ -17,6 +17,24 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 	  <link rel="icon" href="images/LOGO.jpg">
+
+<style>
+  @keyframes wave {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(10deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-10deg);
+    }
+  }
+</style>
+
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
@@ -24,16 +42,13 @@
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
 	      <a  class="navbar-brand" href="index.html"><img src="images/LOGO.jpg" alt="" WIDTH="100" HEIGHT="80"> </a>
-<!--	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">-->
-<!--	        <span class="oi oi-menu">Menu</span>-->
-<!--	      </button>-->
+<!--	-->
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav nav ml-auto">
 	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
 	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
 	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
 	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
 	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact </span></a></li>
@@ -42,36 +57,36 @@
 	      </div>
 	    </div>
 	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	      <div class="slider-item ">
-	      	<div class="overlay"></div>
-	        <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/images.png) ;width: 400px;height: 300px" >
-	          		<div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Joyjane Wambui Githinji</span></h1>
-			            <h2 class="mb-4">-</h2>
+<section  id="home-section" class="hero">
+  <div style="background-image: url(images/Pin-on-Super-gif.gif) ;background-repeat: no-repeat; background-size: cover;" class="slider-item">
+	  	<div  class="one-forth d-flex align-items-center ftco-animate" style="height: 100vh; display: flex; justify-content: center; align-items: center;" >
+          <div  class="text">
+            <span style="font-size: larger" class="subheading">Hello!</span><img src="images/hand-removebg-preview.png" alt="" width="30" height="30" style="animation:wave 0.8s linear infinite;">
+            <h4  class="mb-4 mt-3">I'm <span style="color: #ba8b00  "> Joyjane Wambui Githinji</span></h4>
+            <h2 style="font-size: medium" class="mb-4">Programmer,Web Designer</h2><br><br>
+            <p><a href="#about-section" class="btn btn-primary py-3 px-4">Get Started</a></p>
+          </div>
+        </div>
+<!--    <div  class="overlay"  >-->
+<!--	</div>-->
+<!--    <div class="container">-->
 
+<!--      <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">-->
+<!--        		<div  class="one-forth d-flex align-items-center ftco-animate" data-scrollax="properties: { translateY: '50%' }">-->
+<!--          <div  class="text">-->
+<!--            <span class="subheading">Hello!</span>-->
+<!--            <h1 class="mb-4 mt-3">I'm <span style="color: #ba8b00"> Joyjane Wambui Githinji</span></h1>-->
+<!--            <h2 class="mb-4">-Programmer</h2>-->
+<!--            <p><a href="#contact-section" class="btn btn-primary py-3 px-4">Hire me</a></p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--          <div class="overlay"></div>-->
+<!--        </div>-->
 
-			            <p><a href="#contact-section" class="btn btn-primary py-3 px-4">Hire me</a> </p>
-
-
-		            </div>
-
-		          </div>
-
-	        	</div>
-	        </div>
-	      </div>
-		  </div>
-
-
-    </section>
+<!--      </div>-->
+    </div>
+  </div>
+</section>
 
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
     	<div class="container">
@@ -88,7 +103,7 @@
 		          <div class="col-md-12 heading-section ftco-animate">
 		          	<h1 class="big">About</h1>
 		            <h2 class="mb-4">About Me</h2>
-		            <p>Passionate web designer with a keen eye for creating visually stunning and user-friendly digital experiences. I work in collaboration with designers to create innovative user experiences,develop prototypes quickly to validate interactions and prove product designs.I am open to learing new concepts in programming. Let's collaborate to transform ideas into captivating web solutions.</p>
+		            <p>Passionate web designer with a keen eye for creating visually stunning and user-friendly digital experiences. I work in collaboration with designers to create innovative user experiences.I am open to learing new concepts in programming. Let's collaborate to transform ideas into captivating web solutions.</p>
 		            <ul class="about-info mt-4 px-md-0 px-2">
 		            	<li class="d-flex"><span>Name:</span> <span>Joyjane Wambui</span></li>
 		            	<li class="d-flex"><span>Date of birth:</span> <span>April 13,2004</span></li>
@@ -111,7 +126,8 @@
           <div class="col-md-10 heading-section text-center ftco-animate">
           	<h1 class="big big-2">Resume</h1>
             <h2 class="mb-4">Resume</h2>
-            <p></p>
+			<u> My Education</u>
+
           </div>
         </div>
     		<div class="row">
@@ -121,7 +137,7 @@
 						<h2>Front end Development</h2>
 
     					<span  class="position">Afrrican Institute</span>
-    					<p class="mt-4"> Completed comprehensive education in Front-End Development, specializing in HTML, CSS, and JavaScript. Proficient in creating visually appealing and responsive user interfaces.</p>
+    					<p class="mt-4"> Completed my education in Front-End Development, specializing in HTML, CSS, and JavaScript. Proficient in creating visually appealing and responsive user interfaces.</p>
     				</div>
 <!--    				<div class="resume-wrap ftco-animate">-->
 
@@ -146,7 +162,7 @@
     					<span class="date">JULY 2022-SEPTEMBER 2022</span>
     					<h2>Diploma in Computer</h2>
     					<span class="position">African Institute</span>
-    					<p class="mt-4">Familiar with essential office software packages, including Microsoft Word and Excel, proficient in creating and managing documents and spreadsheets<br>Skilled in creating end-to-end solutions for diverse projects.
+    					<p class="mt-4">Familiar with essential office software packages, including Microsoft Word and Excel, proficient in creating and managing documents and spreadsheets<br>
 						</p>
     				</div>
 					<div class="resume-wrap ftco-animate">
@@ -157,52 +173,6 @@
     				</div>
     			</div>
     		</div>
-    	</div>
-    </section>
-
-    <section class="ftco-section" id="services-section">
-    	<div class="container">
-    		<div class="row justify-content-center py-5 mt-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Services</h1>
-            <h2 class="mb-4">Services</h2>
-            <p></p>
-          </div>
-        </div>
-    		<div class="row">
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<span class="icon">
-								<i class="flaticon-analysis"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-5">Web Design</h3>
-							</div>
-						</a>
-					</div>
-						<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<span class="icon">
-								<i class="flaticon-flasks"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-5">App Developing</h3>
-							</div>
-						</a>
-					</div>
-
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<span class="icon">
-								<i class="flaticon-ideas"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-5">Web Developer</h3>
-							</div>
-						</a>
-					</div>
-
-				</div>
     	</div>
     </section>
 
@@ -302,8 +272,8 @@
     				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-4.jpg);">
     					<div  class="overlay"></div>
 	    				<div class="text text-center p-4">
-								<span>App development</span>
-	    					<h3>Made a simple volunteering app.Find the link to the app on: <a href="https://github.com/wambuiiiii/Vpals">github.com/wambuiiiii</a></h3>
+								<span style="color: black" >App development</span>
+	    					<h6 style="color: white" >Made a simple volunteering app.Find the link to the app on: <a style="color: white" href="https://github.com/wambuiiiii/Vpals">github.com/wambuiiiii</a></h6>
 
 	    				</div>
     				</div>
@@ -382,32 +352,32 @@
 
         </div>
 
-        <div class="row no-gutters block-9">
-          <div class="col-md-6 order-md-last d-flex">
-            <form action="#" class="bg-light p-4 p-md-5 contact-form">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
-              </div>
-              <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-              </div>
-              <div class="form-group">
-				  <a href="https://mail.google.com/mail/u/0/"> <input  type="submit" value="Send Message" class="btn btn-primary py-3 px-5"></a>
+<!--        <div class="row no-gutters block-9">-->
+<!--          <div class="col-md-6 order-md-last d-flex">-->
+<!--            <form action="#" class="bg-light p-4 p-md-5 contact-form">-->
+<!--              <div class="form-group">-->
+<!--                <input type="text" class="form-control" placeholder="Your Name">-->
+<!--              </div>-->
+<!--              <div class="form-group">-->
+<!--                <input type="text" class="form-control" placeholder="Your Email">-->
+<!--              </div>-->
+<!--              <div class="form-group">-->
+<!--                <input type="text" class="form-control" placeholder="Subject">-->
+<!--              </div>-->
+<!--              <div class="form-group">-->
+<!--                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>-->
+<!--              </div>-->
+<!--              <div class="form-group">-->
+<!--				  <a href="https://mail.google.com/mail/u/0/"> <input  type="submit" value="Send Message" class="btn btn-primary py-3 px-5"></a>-->
 
-              </div>
-            </form>
+<!--              </div>-->
+<!--            </form>-->
 
-          </div>
+<!--          </div>-->
 
-          <div class="col-md-6 d-flex">
-          	<div class="img" style="background-image: url(images/Contact.jpg);"></div>
-          </div>
+<!--          <div class="col-md-6 d-flex">-->
+<!--          	<div class="img" style="background-image: url(images/Contact.jpg);"></div>-->
+<!--          </div>-->
         </div>
       </div>
     </section>
